@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <br>
+    <h2>Negrito/Destaque</h2>
+
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semãntica)</p>
+
+<br>
+<p>Na frase temos uma <b>parte do texto em negrito</b> usando tag strong (com semântica)</p>
+<br><br>
+<h1><strong>Itálico / Ênfase</strong></h1>
+<br>
+<p>Nesta frasevamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p><br>
+<p>Nesta frase vamos entrar com uma palavra em <em>itálico</em>usando a tag EM (com semãntica)</p><br><br>
+<h1>Texto Marcado</h1><br><br>
+<p>Aqui vamos usar um texto com destaque <mark style="background-color: green">de marcador de texto</mark> usando mark
+    <br>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color:yelow">de marcador de texto</mark> usando mark</p><br><br>
+    <h1><b>Texto grande e pequeno</b></h1><br>
+    <p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p><br><br>
+    <h1><b>Texto deletado</b></h1><br><br>
+    <p>Neste paragrafo vamos trabalhar com um texto <del>que foi excluido</del> da frase (forma semântica)</p><br><br>
+    <H1><b>Texto inserido</b></H1><br><br>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p><br>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p><br><br>
+    <h1><b>Texto sobrescrito</b></h1><br><br>
+    <p>Vamos demonstrar uma formula de equação do segundo grau ax <sup>2</sup> + bx + c = 0 usanto tag sup</p><br><br>
+    <h1><b>Texto subescrito</b></h1><br><br>
+    <P>Vamos demonstrar o texto subescrito com a formula da agua <strong>H</strong><sub>2</sub><strong>O</strong></P><BR><BR>
+        <h1><b>Trecho de código fonte</b></h1><br><br>
+        <p>Neste exemplo vou demonstrar um trecho de código</p><br>
+        <p>inserido o comando <small>document.getE1ementById("edtCodigo")</small> que é um comando java script</p><br>
+        <p>Inserindo um longo codigo me python:</p><br><br>
+        <pre><code>import pandas as pd
+
+            def remove_outlier(df_old):
+                # Cálculo do primeiro e terceiro quartil
+                Q1 = df_old.quantile(0.25)
+                Q3 = df_old.quantile(0.75)
+                IQR = Q3 - Q1
+                
+                # Definindo limites para identificar outliers
+                lower_bound = Q1 - 1.5 * IQR
+                upper_bound = Q3 + 1.5 * IQR
+                
+                # Filtrando o DataFrame para remover outliers
+                df_new = df_old[~((df_old < lower_bound) | (df_old > upper_bound)).any(axis=1)]
+                
+                return df_new</code></pre><br><br>
+                <h1><b>Citações (quotation) simples</b></h1><br><br>
+                <p>Segundo Stev Jobs <blockquote>A tecnologia move o mundo</blockquote></p><br><br>
+                <h1><b>Citações completas (livros)</b></h1><br><br>
+                <p>Segundo Sandra Kussunoki no seu livro A dança e o ventre:</p><br>
+                <p>Dados existentes sobre intervenções cirúrgicas nos corpos comteporâneos visndo á obtenção de um corpo mais próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outras, comprovam essa busca obsessiva pelo ideal de perfeição, que é baseado principalmente na magreza.</p>
+</body>
+</html>
